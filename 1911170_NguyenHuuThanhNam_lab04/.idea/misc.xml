@@ -3,11 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/three year/java android/1911170_NguyenHuuThanhNam_lab04/app/src/main/res/drawable/ic_baseline_mail_24.xml" value="0.2755208333333333" />
-        <entry key="..\:/three year/java android/1911170_NguyenHuuThanhNam_lab04/app/src/main/res/drawable/ic_key.xml" value="0.14947916666666666" />
-        <entry key="..\:/three year/java android/1911170_NguyenHuuThanhNam_lab04/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14947916666666666" />
-        <entry key="..\:/three year/java android/1911170_NguyenHuuThanhNam_lab04/app/src/main/res/layout/m001_act_login.xml" value="0.1" />
-        <entry key="..\:/three year/java android/1911170_NguyenHuuThanhNam_lab04/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/drawable/bg_login.xml" value="0.2" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/drawable/bg_radius.xml" value="0.2" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/drawable/bg_red_corner_30.xml" value="0.15" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/drawable/bg_red_corner_bai2.xml" value="0.15833333333333333" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/drawable/bg_top.xml" value="0.2" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/actionbar_home.xml" value="0.13333333333333333" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/activity_main.xml" value="0.15307971014492755" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/activity_main2.xml" value="0.152" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/activity_main3.xml" value="0.12613981762917933" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/item_topic.xml" value="0.13333333333333333" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/layout_custom_toast.xml" value="0.2" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/layout_custom_toast2.xml" value="0.2" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/m001_act_login.xml" value="0.1793478260869565" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/m001_frg_emoij.xml" value="0.12613981762917933" />
+        <entry key="..\:/three year/java android/1911170_lab4/app/src/main/res/layout/success_shape.xml" value="0.11458333333333333" />
       </map>
     </option>
   </component>
@@ -16,5 +26,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>

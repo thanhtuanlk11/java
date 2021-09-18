@@ -1,6 +1,6 @@
-<?xml versio="1.0" encoding="utf-8"?><?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawble="@drawble/bg_rect"/>
+    <item android:drawable="@drawable/bg_rect"/>
     <item android:bottom="3dp">
         <shape>
             <corners android:radius="20dp"/>
