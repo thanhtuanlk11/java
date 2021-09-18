@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Âm thanh con vật</string>
+    <string name="txt_rabbit">Thỏ</string>
+    <string name="txt_desc">Thỏ là loài động vật có vú nhỏ trong họ Leporidae (cùng với thỏ rừng) thuộc bộ Lagomorpha (cùng với pika). Oryctolagus cuniculus bao gồm các loài thỏ châu Âu và con cháu của nó, 305 giống thỏ nhà trên thế giới [1]. Sylvilagus bao gồm 13 loài thỏ hoang dã, trong số đó có bảy loại cottontail. Loài thỏ châu Âu, đã được giới thiệu ở mọi lục địa, ngoại trừ Nam Cực, đã quen thuộc trên khắp thế giới như một loài động vật săn mồi hoang dã và là một dạng vật nuôi và vật nuôi đã được thuần hóa. Với ảnh hưởng rộng rãi của nó đối với hệ sinh thái và văn hóa, ở nhiều khu vực trên thế giới, thỏ (hoặc thỏ) là một phần của cuộc sống hàng ngày — như thức ăn, quần áo, bạn đồng hành và là nguồn cảm hứng nghệ thuật.</string>
+    <string name="txt_name">Thỏ</string>
+</resources>

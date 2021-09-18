@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linear"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp"
+        android:paddingBottom="5dp">
+        <ImageView
+            android:id="@+id/iv_rabbit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_rabbit"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/tv_rabbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_radius"
+            android:fontFamily="sans-serif-light"
+            android:paddingHorizontal="20dp"
+            android:text="@string/txt_rabbit"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp"
+        android:paddingBottom="5dp">
+        <ImageView
+            android:id="@+id/iv_cat"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_cat"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/tv_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_radius"
+            android:fontFamily="sans-serif-light"
+            android:paddingHorizontal="20dp"
+            android:text="@string/txt_cat"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </FrameLayout>
+    <ToggleButton
+        android:id="@+id/btn_OnOff"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
