@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/iv_animal"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_elephant"
+        tools:ignore="ContentDescription" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+        <Button
+            android:id="@+id/bt_alpha"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/txt_alpha"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/bt_scale"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/txt_scale"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/bt_trans"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/txt_trans"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/bt_rotate"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/txt_rotate"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+    </TableRow>
+    <Button
+        android:id="@+id/btnRadom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="Radom"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#2CB831">
+    </Button>
+
+</LinearLayout>

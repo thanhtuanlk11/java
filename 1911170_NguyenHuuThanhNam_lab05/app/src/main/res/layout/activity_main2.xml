@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <include layout="@layout/actionbar_home" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <FrameLayout
+            android:id="@+id/fr_mom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius"
+            android:backgroundTint="#FFD54F"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:tag="@string/phone_mom">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_phone_yellow"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_mom"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fr_dad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_radius"
+            android:backgroundTint="#4FC3F7"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:tag="@string/phone_dad">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_phone_blue"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_dad"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fr_crush"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#E85C5C"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:tag="@string/phone_crush">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_phone_red"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_crush"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fr_best_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_radius"
+            android:backgroundTint="#81C784"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:tag="@string/phone_best_friend">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_phone_green"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_best_friend"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

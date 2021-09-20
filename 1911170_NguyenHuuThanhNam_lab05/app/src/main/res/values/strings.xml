@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="app_name2">Quick Call</string>
+    <string name="txt_scale">Scale</string>
+    <string name="txt_trans">Trans</string>
+    <string name="txt_rotate">Rotate</string>
+    <string name="txt_alpha">Alpha</string>
+    <string name="txt_mom">Mom</string>
+    <string name="txt_dad">Dad</string>
+    <string name="txt_crush">Crush</string>
+    <string name="txt_best_friend">Best friend</string>
+    <string name="phone_mom">096666543</string>
+    <string name="phone_dad">096666544</string>
+    <string name="phone_crush">096886543</string>
+    <string name="phone_best_friend">099966543</string>
+</resources>
