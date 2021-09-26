@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Custom Button"
+        android:textColor="#ED1616"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:width="0dp"
+            android:text="Selectors"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:width="0dp"
+            android:layout_marginStart="50dp"
+            android:text="Shapes+Selectors"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnCOLORED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30sp"
+            android:text="COLORED SELECTOR"
+            android:background="@drawable/custom_buttom"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/custom_buttom2"
+            android:text="ROUND SHAPE"
+            android:textSize="12sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="128dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_buttom3"
+            android:text="COLORED SELECTOR DISABLE"
+            android:textColor="#B5A948"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/custom_buttom4"
+            android:padding="5dp"
+            android:text="SHAPE WITH GRADIENT"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginLeft="50sp"
+            android:id="@+id/imgHappy"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_icon1" />
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/custom_bottom6"
+            android:padding="5dp"
+            android:text="SHELECTOR SHAPE"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50sp"
+            android:background="@drawable/custom_icon2"
+            android:src="@drawable/custom_icon1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90sp"
+            android:background="@drawable/custom_icon3"
+            android:src="@drawable/custom_icon1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/custom_bottom9"
+            android:text="TOAST"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnDialog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/custom_bottom9"
+        android:text="DIALOG"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    </TableRow>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Made in by Thành Nam"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp" />
+</LinearLayout>

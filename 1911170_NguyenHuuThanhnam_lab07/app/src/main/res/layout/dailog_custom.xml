@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/dialog">
+
+    <TableRow
+        android:id="@+id/tbr1"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp">
+
+        <ImageView
+            android:id="@+id/imgDialog"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/img_store" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="Đăng nhập"
+            android:textColor="#EA1010"
+            android:textSize="25sp" />
+    </TableRow>
+    <EditText
+        android:id="@+id/txt_taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="Tài khoản" />
+    <EditText
+        android:id="@+id/txt_matkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textStyle="normal"/>
+    <TableRow
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp">
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDangNhap"
+            android:text="Đăng nhập"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Thoát"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+
+</LinearLayout>
