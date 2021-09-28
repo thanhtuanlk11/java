@@ -38,7 +38,24 @@
         android:textColor="#06D60F"
         android:textSize="30sp" />
 
+    <ImageView
+        android:id="@+id/img123"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/mota"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/init"
+        android:background="@drawable/x" />
 
-
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/mota"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/init"
+        android:background="@drawable/z" />
 
 </RelativeLayout>
