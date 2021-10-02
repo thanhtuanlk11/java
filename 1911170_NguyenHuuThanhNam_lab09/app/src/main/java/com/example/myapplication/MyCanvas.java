@@ -21,9 +21,13 @@ public class MyCanvas extends View {
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
         //Vẽ nền vàng
+//        canvas.drawColor(color);
         canvas.drawColor(color);
-//        drawText(canvas,"Thành Nam");
-        drawRect(canvas);
+        drawText(canvas,"Thành Nam");
+//        drawRect(canvas);
+
+
+
     }
     private void drawText(Canvas canvas,String mMessage){
         int viewWidth = getWidth();
@@ -49,4 +53,5 @@ public class MyCanvas extends View {
         canvas.drawRect(pos*2 +viewWidth/5,viewHeight/2-100,
                 (pos+viewWidth/5)*2,viewHeight,mPaint);
     }
+
 }
