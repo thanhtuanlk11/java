@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NguyenHuuThanhNam(1911170)-deso2</string>
+    <string name="app_value">Nhập giá trị</string>
+    <string name="app_fullname">Họ và tên</string>
+    <string name="app_X">Giá trị X</string>
+    <string name="app_Y">Giá trị Y</string>
+    <string name="app_Z">Giá trị Z</string>
+    <string name="app_clear">Xóa trắng</string>
+    <string name="app_back">quay lại</string>
+    <string name="app_result">Kết quả tính toán</string>
+    <string name="app_ok">Đồng ý</string>
+    <string name="app_plus">Phép cộng</string>
+    <string name="app_mul">Phép nhân</string>
+    <string name="app_exp">Phép lũy thừa</string>
+</resources>

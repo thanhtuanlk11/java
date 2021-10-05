@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_value"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_fullname"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/txtHovaTen"
+            android:layout_marginLeft="50sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"/>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_X"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/txtX"
+            android:layout_marginLeft="63sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"/>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_Y"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/txtY"
+            android:layout_marginLeft="63sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"/>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_Z"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/txtZ"
+            android:layout_marginLeft="63sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"/>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btnHoTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_fullname"
+            android:layout_marginLeft="15sp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/nguyenhuuthanhnam_background"/>
+        <Button
+            android:id="@+id/btnDongY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_ok"
+            android:layout_marginLeft="15sp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/nguyenhuuthanhnam_background"/>
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_clear"
+            android:layout_marginLeft="15sp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/nguyenhuuthanhnam_background"/>
+
+
+    </TableRow>
+
+
+
+
+
+</LinearLayout>

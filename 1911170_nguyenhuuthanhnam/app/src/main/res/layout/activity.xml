@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả tính toán"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="họ và tên:" />
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_marginLeft="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phép công:"/>
+        <TextView
+            android:id="@+id/txtCong1"
+            android:layout_marginLeft="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phép nhân:"/>
+        <TextView
+            android:id="@+id/txtNhan"
+            android:layout_marginLeft="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phép lũy thừa:"/>
+        <TextView
+            android:id="@+id/txtluyThua"
+            android:layout_marginLeft="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <Button
+        android:gravity="center"
+        android:id="@+id/btnQuaylai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"/>
+
+
+</LinearLayout>

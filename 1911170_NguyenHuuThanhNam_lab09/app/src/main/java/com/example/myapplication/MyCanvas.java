@@ -42,6 +42,7 @@ public class MyCanvas extends View {
             canvas.rotate(36);
         }
     }
+
     private void drawRect(Canvas canvas){
         int pos=10;
         int viewWidth=getWidth();
@@ -53,5 +54,6 @@ public class MyCanvas extends View {
         canvas.drawRect(pos*2 +viewWidth/5,viewHeight/2-100,
                 (pos+viewWidth/5)*2,viewHeight,mPaint);
     }
+
 
 }
