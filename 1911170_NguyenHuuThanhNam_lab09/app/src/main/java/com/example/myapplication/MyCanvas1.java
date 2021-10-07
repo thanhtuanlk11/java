@@ -16,9 +16,9 @@ public class MyCanvas1 extends View {
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
         canvas.drawColor(color2);
-//        drawRect(canvas);
-        drawRect2(canvas);
-        drawText(canvas,"kWh");
+        drawRect(canvas);
+//        drawRect2(canvas);
+//        drawText(canvas,"kWh");
     }
     private void drawRect(Canvas canvas){
 
