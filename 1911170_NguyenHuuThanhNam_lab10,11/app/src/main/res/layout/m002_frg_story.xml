@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/greenMid"
     android:orientation="vertical">
-<!--    <include layout="@layout/actiobar_home" />-->
+    <include layout="@layout/actiorbar_home" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_story"
         android:layout_width="match_parent"

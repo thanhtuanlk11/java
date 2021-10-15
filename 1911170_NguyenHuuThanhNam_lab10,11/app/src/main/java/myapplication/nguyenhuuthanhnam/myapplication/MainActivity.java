@@ -25,14 +25,17 @@ public class MainActivity extends AppCompatActivity {
                 M001TopicFrg(), null).commit();
     }
     public void gotoM002Screen(String topicName) {
-
+        this.topicName = topicName;
+        M002StoryFrg frg = new M002StoryFrg();
+        frg.setTopicName(topicName);
+        showFrg(frg);
     }
     public void backToM001Screen() {
         gotoM001Screen();
     }
-
-    public void gotoM003Screen(ArrayList<StoryEntity> listStory, StoryEntity tag) {
+    public void gotoM003Screen(ArrayList<StoryEntity> listStory, StoryEntity story) {
+        M003DetailStoryFrg frg = new M003DetailStoryFrg();
+        frg.setData(topicName, listStory, story);
+        showFrg(frg);
     }
-//    public void gotoM003Screen(ArrayList<StoryEntity> listStory, StoryEntity story) {
-//    }
 }
