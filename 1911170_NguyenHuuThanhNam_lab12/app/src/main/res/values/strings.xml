@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="txt_alert">Hãy cấp quyền truy cập để lấy ds bài hát</string>
+</resources>
