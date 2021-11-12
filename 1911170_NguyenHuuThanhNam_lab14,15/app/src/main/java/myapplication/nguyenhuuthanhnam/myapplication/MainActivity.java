@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         gotoLoginScreen();
     }
     public void gotoRegisterScreen() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.ln_main, new
+        getSupportFragmentManager().beginTransaction().replace(R.id.ln_main,new
                 M001RegisterFragment()).commit();
     }
     public void gotoLoginScreen() {

@@ -43,22 +43,27 @@ public class M000LoginFragment  extends Fragment implements View.OnClickListener
     private void gotoRegisterScreen() {
         ((MainActivity) mContext).gotoRegisterScreen();
     }
+    SQLiteHelper helper;
     private void login(String mail, String pass) {
         if (mail.isEmpty() || pass.isEmpty()) {
             Toast.makeText(mContext, "Empty value", Toast.LENGTH_SHORT).show();
             return;
         }
-        SharedPreferences pref = mContext.getSharedPreferences(MainActivity.SAVE_PREF,
-                Context.MODE_PRIVATE);
-        String savedPass = pref.getString(mail, null);
-        if (savedPass == null) {
-            Toast.makeText(mContext, "Email is not existed!", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (!pass.equals(savedPass)) {
-            Toast.makeText(mContext, "Password is not correct!", Toast.LENGTH_SHORT).show();
-            return;
-        }
+//        SharedPreferences pref = mContext.getSharedPreferences(MainActivity.SAVE_PREF,
+//                Context.MODE_PRIVATE);
+//        String savedPass = pref.getString(mail, null);
+//        if (savedPass == null) {
+//            Toast.makeText(mContext, "Email is not existed!", Toast.LENGTH_SHORT).show();
+//            return;
+//        }
+//        if (!pass.equals(savedPass)) {
+//            Toast.makeText(mContext, "Password is not correct!", Toast.LENGTH_SHORT).show();
+//            return;
+//        }
+        if(helper.login(mail,pass))
         Toast.makeText(mContext, "Login account successfully!", Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(mContext, "Wrong email or password!", Toast.LENGTH_SHORT).show();
+
     }
 }

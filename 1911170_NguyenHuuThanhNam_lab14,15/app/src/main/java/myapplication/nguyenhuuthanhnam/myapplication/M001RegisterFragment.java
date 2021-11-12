@@ -43,6 +43,10 @@ public class M001RegisterFragment extends Fragment implements View.OnClickListen
     private void gotoLoginScreen() {
         ((MainActivity) mContext).gotoLoginScreen();
     }
+    SQLiteHelper helper;
+    public M001RegisterFragment(SQLiteHelper helper){
+        this.helper = helper;
+    }
     private void register(String mail, String pass, String repass) {
         if (mail.isEmpty() || pass.isEmpty() || repass.isEmpty()) {
             Toast.makeText(mContext, "Empty value", Toast.LENGTH_SHORT).show();
@@ -51,6 +55,8 @@ public class M001RegisterFragment extends Fragment implements View.OnClickListen
         if (!pass.equals(repass)) {
             Toast.makeText(mContext, "Password is not match", Toast.LENGTH_SHORT).show();
         }
+        Account account = new Account(mail,pass);
+        helper.insert(account);
         SharedPreferences pref = mContext.getSharedPreferences(MainActivity.SAVE_PREF,
                 Context.MODE_PRIVATE);
         String savedPass = pref.getString(mail, null);
