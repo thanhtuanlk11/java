@@ -82,4 +82,184 @@ public class Datagame {
             }
         }
     }
+    public void vuotTrai(){
+        for(int i= 0;i<4;i++){
+            for(int j=0;j<4;j++){
+                int so = mangHaiChieu[i][j];
+                if(so == 0){
+                    continue;//0
+                }else{
+                    for (int k = j+1;k<4;k++){
+                        int sox = mangHaiChieu[i][k];
+                        if(sox == 0){
+                            continue;
+                        }else {
+                            if(sox == so){
+                                mangHaiChieu[i][j] = so*2;
+                                mangHaiChieu[i][k] = 0;
+                                break;
+                            }else {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        for(int i =0;i<4;i++){
+            for(int j =0;j<4;j++){
+                int so = mangHaiChieu[i][j];
+                if (so == 0){
+                    for(int k =j +1;k<4;k++){
+                        int so1 = mangHaiChieu[i][k];
+                        if(so1 == 0){
+                            continue;
+                        }else {
+                            mangHaiChieu[i][j] = mangHaiChieu[i][k];
+                            mangHaiChieu[i][k] = 0;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        taoSo();
+        chuyenDoi();
+
+    }
+    public void vuotPhai(){
+        for(int i= 3;i>=0;i--){
+            for(int j=3;j>=0;j--){
+                int so = mangHaiChieu[i][j];
+                if(so == 0){
+                    continue;//0
+                }else{
+                    for (int k = j-1;k>=0;k--){
+                        int sox = mangHaiChieu[i][k];
+                        if(sox == 0){
+                            continue;
+                        }else {
+                            if(sox == so){
+                                mangHaiChieu[i][j] = so*2;
+                                mangHaiChieu[i][k] = 0;
+                                break;
+                            }else {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        for(int i= 3;i>=0;i--){
+            for(int j=3;j>=0;j--){
+                int so = mangHaiChieu[i][j];
+                if (so == 0){
+                    for(int k =j -1;k>=0;k--){
+                        int so1 = mangHaiChieu[i][k];
+                        if(so1 == 0){
+                            continue;
+                        }else {
+                            mangHaiChieu[i][j] = mangHaiChieu[i][k];
+                            mangHaiChieu[i][k] = 0;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        taoSo();
+        chuyenDoi();
+
+    }
+    public void vuotXuong(){
+        for(int i= 0;i<4;i++){
+            for(int j=0;j<4;j++){
+                int so = mangHaiChieu[j][i];
+                if(so == 0){
+                    continue;//0
+                }else{
+                    for (int k = j+1;k<4;k++){
+                        int sox = mangHaiChieu[k][i];
+                        if(sox == 0){
+                            continue;
+                        }else {
+                            if(sox == so){
+                                mangHaiChieu[j][i] = so*2;
+                                mangHaiChieu[k][i] = 0;
+                                break;
+                            }else {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        for(int i =0;i<4;i++){
+            for(int j =0;j<4;j++){
+                int so = mangHaiChieu[j][i];
+                if (so == 0){
+                    for(int k =j +1;k<4;k++){
+                        int so1 = mangHaiChieu[k][i];
+                        if(so1 == 0){
+                            continue;
+                        }else {
+                            mangHaiChieu[j][i] = mangHaiChieu[k][i];
+                            mangHaiChieu[k][i] = 0;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        taoSo();
+        chuyenDoi();
+
+    }
+    public void vuotLen(){
+        for(int i= 3;i>=0;i--){
+            for(int j=3;j>=0;j--){
+                int so = mangHaiChieu[j][i];
+                if(so == 0){
+                    continue;//0
+                }else{
+                    for (int k = j-1;k>=0;k--){
+                        int sox = mangHaiChieu[k][i];
+                        if(sox == 0){
+                            continue;
+                        }else {
+                            if(sox == so){
+                                mangHaiChieu[j][i] = so*2;
+                                mangHaiChieu[k][i] = 0;
+                                break;
+                            }else {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        for(int i= 3;i>=0;i--){
+            for(int j=3;j>=0;j--){
+                int so = mangHaiChieu[j][i];
+                if (so == 0){
+                    for (int k = j-1;k>=0;k--){
+                        int so1 = mangHaiChieu[k][i];
+                        if(so1 == 0){
+                            continue;
+                        }else {
+                            mangHaiChieu[j][i] = mangHaiChieu[k][i];
+                            mangHaiChieu[k][i] = 0;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        taoSo();
+        chuyenDoi();
+
+    }
 }

@@ -22,6 +22,12 @@ public class OSoAdapter extends ArrayAdapter<Integer> {
         this.arr = new ArrayList<>(objects);
     }
 
+    @Override
+    public void notifyDataSetChanged() {
+        arr = Datagame.getDatagame().getArrSo();
+        super.notifyDataSetChanged();
+    }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

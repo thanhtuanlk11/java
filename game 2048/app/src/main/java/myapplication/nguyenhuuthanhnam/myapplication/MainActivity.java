@@ -39,17 +39,21 @@ private OSoAdapter adapter;
                         break;
                     case MotionEvent.ACTION_UP:
                         if(Math.abs(event.getX()-X)>Math.abs(event.getY()-Y)){
-                            if(event.getX()>X){
-                                Toast.makeText(MainActivity.this, "vuot phải", Toast.LENGTH_SHORT).show();
+                            if(event.getX()<X){
+                                Datagame.getDatagame().vuotTrai();
+                                adapter.notifyDataSetChanged();
                             }else{
-                                Toast.makeText(MainActivity.this, "vuot trái", Toast.LENGTH_SHORT).show();
+                                Datagame.getDatagame().vuotPhai();
+                                adapter.notifyDataSetChanged();
                             }
 
                         }else {
                            if(event.getY()>Y){
-                               Toast.makeText(MainActivity.this, "vuot xuống", Toast.LENGTH_SHORT).show();
+                               Datagame.getDatagame().vuotLen();
+                               adapter.notifyDataSetChanged();
                            }else {
-                               Toast.makeText(MainActivity.this, "vuot len", Toast.LENGTH_SHORT).show();
+                               Datagame.getDatagame().vuotXuong();
+                               adapter.notifyDataSetChanged();
                            }
 
                         }
