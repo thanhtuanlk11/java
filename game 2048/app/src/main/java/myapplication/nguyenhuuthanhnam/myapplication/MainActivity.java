@@ -3,10 +3,15 @@ package myapplication.nguyenhuuthanhnam.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.GridView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 private GridView gdvGamePlay;
+private View.OnTouchListener listener;
+private float X,Y;
 private OSoAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +29,29 @@ private OSoAdapter adapter;
         Datagame.getDatagame().intt(MainActivity.this);
         adapter = new OSoAdapter(MainActivity.this,0,Datagame.getDatagame().getArrSo());
 
+        listener = new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        X=event.getX();
+                        Y = event.getY();
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        if(Math.abs(event.getX()-X)>Math.abs(event.getY()-Y)){
+                            Toast.makeText(MainActivity.this, "vuot ngang", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(MainActivity.this, "vuot doc", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                }
+                return true;
+            }
+        };
+
     }
     private void setData(){
         gdvGamePlay.setAdapter(adapter);
+        gdvGamePlay.setOnTouchListener(listener);
     }
 }
