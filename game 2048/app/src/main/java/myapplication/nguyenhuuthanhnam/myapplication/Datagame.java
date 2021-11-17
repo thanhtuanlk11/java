@@ -29,7 +29,7 @@ public class Datagame {
         }
         TypedArray ta = context.getResources().obtainTypedArray(R.array.mauNenCuaSo);
         mangMau = new int[ta.length()];
-        for (int i=0;i<0;i++){
+        for (int i=0;i<ta.length();i++){
             mangMau[i]= ta.getColor(i,0);
         }
         ta.recycle();
@@ -70,7 +70,7 @@ public class Datagame {
             int i = r.nextInt(4),j=r.nextInt(4);
             if(mangHaiChieu[i][j]==0){
                 mangHaiChieu[i][j]=2;
-                soOTao--;   
+                soOTao--;
             }
         }
     }
