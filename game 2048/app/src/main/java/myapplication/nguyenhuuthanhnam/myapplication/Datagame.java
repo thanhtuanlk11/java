@@ -70,7 +70,7 @@ public class Datagame {
             int i = r.nextInt(4),j=r.nextInt(4);
             if(mangHaiChieu[i][j]==0){
                 mangHaiChieu[i][j]=2;
-                soOTao--;
+                soOTao--;   
             }
         }
     }
